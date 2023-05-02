@@ -1,0 +1,133 @@
+api desarrollada con laravel
+en laravel se encuentran las migraciones para la creacion de las tablas requeredias
+
+base de datos mysql
+la base de datos contiene las tablas necesarias para el funcionamiento de la API
+
+las rutas de acceso al api se encuentran en una imagen en este mismo repositorio
+
+
+
+estructura de lista de productos:
+
+{
+    "data": [
+        {
+            "id": 2,
+            "nombre": "sghjjjhhjjhd",
+            "marca": "marcare",
+            "codigo": 458,
+            "id_categoria": 0,
+            "categoria": "No Tiene Categoria",
+            "inactive": 0,
+            "created_at": "01-05-2023",
+            "updated_at": "02-05-2023",
+            "detalles": [
+                {
+                    "id": 8,
+                    "nombre": "sdd",
+                    "valor": "34433"
+                },
+                {
+                    "id": 9,
+                    "nombre": "carateristica g",
+                    "valor": "34433"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "sghjjjhhjjhd",
+            "marca": "marcare",
+            "codigo": 737346385,
+            "id_categoria": 0,
+            "categoria": "No Tiene Categoria",
+            "inactive": 0,
+            "created_at": "01-05-2023",
+            "updated_at": "02-05-2023",
+            "detalles": []
+        },
+        {
+            "id": 4,
+            "nombre": "nombre1",
+            "marca": "marcare",
+            "codigo": 52258465,
+            "id_categoria": 0,
+            "categoria": "No Tiene Categoria",
+            "inactive": 0,
+            "created_at": "01-05-2023",
+            "updated_at": "02-05-2023",
+            "detalles": []
+        },
+        {
+            "id": 5,
+            "nombre": "amy asi",
+            "marca": "marcare",
+            "codigo": 4556658,
+            "id_categoria": 0,
+            "categoria": "No Tiene Categoria",
+            "inactive": 0,
+            "created_at": "02-05-2023",
+            "updated_at": "02-05-2023",
+            "detalles": []
+        }
+    ]
+}
+
+
+
+estructura para agregar producto Nuevo:
+{
+            "id": 3,
+            "nombre": "ultimo",
+            "marca": "marcare",
+            "codigo": 8373555,
+            "id_categoria": 0,
+            "categoria": "No Tiene Categoria",
+            "inactive": 0,
+            "created_at": "01-05-2023",
+            "updated_at": "02-05-2023",
+            "detalles": []
+        }
+
+
+Esrucrura para Actualizar Producto :
+
+{
+            "id": 4,
+            "nombre": "nombre1565",
+            "marca": "marcare",
+            "codigo": 52258465,
+            "id_categoria": 0,
+            "categoria": "No Tiene Categoria",
+            "inactive": 0,
+            "created_at": "01-05-2023",
+            "updated_at": "02-05-2023",
+            "detalles": []
+        }
+
+Esrucrura para Actualizar Producto y agregar Caracteristicas (detalles:)
+
+{
+            "id": 4,
+            "nombre": "nombre1565",
+            "marca": "marcare",
+            "codigo": 52258465,
+            "id_categoria": 0,
+            "categoria": "No Tiene Categoria",
+            "inactive": 0,
+            "created_at": "01-05-2023",
+            "updated_at": "02-05-2023",
+            "detalles": [
+		{
+                    "id": 8,
+                    "nombre": "sdd",
+                    "valor": "34433"
+                },
+                {
+                    "id": 9,
+                    "nombre": "carateristica g",
+                    "valor": "34433"
+                }
+	    ]
+        }
