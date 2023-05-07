@@ -40,7 +40,8 @@ class ProductoController extends Controller
             'mensaje' => 'Producto Guardado Correctamente'
         ],200);
         */
-        return new ProductoResource(Producto::create($request->all()));
+        return (new ProductoResource(Producto::create($request->all())))
+        ->additional(['msg'=>'Producto Guardado Correctamente']);
     }
 
     /**
@@ -71,11 +72,12 @@ class ProductoController extends Controller
         ],200);
        */
 
-/*
-        $id->update($request->except('codigo'));
-        return new ProductoResource($id);
-*/
 
+        $id->update($request->except('codigo'));
+        return (new ProductoResource($id))
+        ->additional(['msg'=>'Producto Actualizado Correctamente']);
+
+/*
             // Actualizar el producto
     $id->update($request->except('codigo'));
 
@@ -101,7 +103,7 @@ class ProductoController extends Controller
     }
 
     return new ProductoResource($id);
-
+*/
     }
 
     /**
@@ -119,7 +121,8 @@ class ProductoController extends Controller
             'res'=>true,
             'mensaje'=>'Producto Eliminado Correctamente'
         ],200);*/
-        return new ProductoResource($id);
+        return (new ProductoResource($id))
+        ->additional(['msg'=>'Producto Eliminado Correctamente']);
 
     }
 }

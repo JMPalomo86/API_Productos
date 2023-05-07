@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\CategoriaController;
 use App\Http\Controllers\API\ProductoController;
 use App\Http\Controllers\API\CaracteristicaController;
+use App\Http\Controllers\API\ProductDetailController;
 
 
 /*
@@ -21,6 +22,16 @@ use App\Http\Controllers\API\CaracteristicaController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('productodetalle',[ProductDetailController::class,'index']);
+Route::post('productodetalle',[ProductDetailController::class,'store']);
+Route::get('productodetalle/{id}',[ProductDetailController::class,'show']);
+Route::put('productodetalle/{id}',[ProductDetailController::class,'update']);
+Route::delete('productodetalle/{id}',[ProductDetailController::class,'destroy']);
+
+//Route::apiResource('productodetalle',ProductDetailController::class);
+
+
 
 Route::get('categorias',[CategoriaController::class,'index']);
 Route::post('categorias',[CategoriaController::class,'store']);
